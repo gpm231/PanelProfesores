@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login Page</title>
+  <title>Panel</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/sgmhPpP/logoiesloscastillos.png">
   <script>
     function login() {
       var email = document.getElementById('userbox').value;
       var password = document.getElementById('passbox').value;
 
       var xhr = new XMLHttpRequest();
-      var url = "https://script.google.com/macros/s/AKfycbxcsxlsDa1BMnqvFB8-xwFYlfOjYh2cA7M4PmoKHuVSegNnKSTuT_l6VO_vDLrVLGaySw/exec";
+      var url = "https://script.google.com/macros/s/AKfycbyvQSagc9Xj9yDVc7JFJpvIEjUBWkhivJKgVCVjK8SJfxUVVrUdiisi_Sg2MvpwAyO7FQ/exec";
       xhr.open("POST", url, true);
       xhr.setRequestHeader("Content-Type", "application/json");
 
