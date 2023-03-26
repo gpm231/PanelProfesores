@@ -1,42 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Panel</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/sgmhPpP/logoiesloscastillos.png">
-  <script>
-    function login() {
-      var email = document.getElementById('userbox').value;
-      var password = document.getElementById('passbox').value;
-
-      var xhr = new XMLHttpRequest();
-      var url = "https://script.google.com/macros/s/AKfycbyvQSagc9Xj9yDVc7JFJpvIEjUBWkhivJKgVCVjK8SJfxUVVrUdiisi_Sg2MvpwAyO7FQ/exec";
-      xhr.open("POST", url, true);
-      xhr.setRequestHeader("Content-Type", "application/json");
-
-      var data = JSON.stringify({"email": email, "password": password});
-
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          console.log("SUCCESS")
-        }
-        else {
-          console.log("FAIL")
-        }
-      };
-
-      xhr.send(data);
-    }
-  </script>
+	<title>Redirecting...</title>
+	<meta http-equiv="refresh" content="0;URL='https://script.google.com/macros/s/AKfycbxs1S9oCvO9yjZdgFg57BGdKN2VxRXCZJfTtS55rawonPsZfKWLFVjufMT-fUMrKH4lJA/exec'" />
 </head>
 <body>
-  <div class="container">
-    <img src="https://i.ibb.co/sgmhPpP/logoiesloscastillos.png" alt="logo" width="120" height="180">
-    <form>
-      <input id="userbox" type="text" name="email" placeholder="Email">
-      <input id="passbox" type="password" name="password" placeholder="Contraseña">
-      <button id="loginBtn" type="button" onclick="login()">Entrar</button>
-    </form>
-  </div>
+	<p>You are being redirected to <a href="https://script.google.com/macros/s/AKfycbxs1S9oCvO9yjZdgFg57BGdKN2VxRXCZJfTtS55rawonPsZfKWLFVjufMT-fUMrKH4lJA/exec">https://script.google.com/macros/s/AKfycbxs1S9oCvO9yjZdgFg57BGdKN2VxRXCZJfTtS55rawonPsZfKWLFVjufMT-fUMrKH4lJA/exec</a></p>
 </body>
 </html>
